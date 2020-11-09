@@ -20,6 +20,8 @@ function create_release() {
     then
         return
     fi
+
+    gh release create "$version"
 }
 
 function release() {
